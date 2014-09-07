@@ -3,8 +3,6 @@ Extending or Customizing Spark Server
 
 First I want to thank [@Dave](http://community.spark.io/users/dave/activity) for providing his insight on the Spark Cloud. Thank you @Dave!.
 
-https://github.com/krvarma/SparkServer_Extension
-
 Here is a project I worked this week to extend Spark Server. I have Spark Server running on my Raspberry PI and was thinking about adding some custom functionality to it. As a first step I thought to add functionality to send Push Notification from Spark Server itself. There are many other methods to achieve this but from Spark Server itself will be an advantage.
 
 While looking at the Spark Server source code, I found one point where we can safely place code to extend Spark Cloud. The file *SparkCore.js* has one function called *onCoreSentEvent*.  Here the Spark Server is processing the internal "*spark/cc3000-patch-version*" event. The [Line No. 1025](https://github.com/spark/spark-protocol/blob/master/js/clients/SparkCore.js#L1025) starts the processing of internal event. I thought of the same method to extend Spark Server to include some custom functionality. This is a point where we can insert our own code safely and without breaking anything. 
