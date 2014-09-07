@@ -1,7 +1,7 @@
 Extending or Customizing Spark Server
 ----------------------
 
-First I want to thank @Dave for providing his insight on the Spark Cloud. Thank you @Dave!.
+First I want to thank [@Dave](http://community.spark.io/users/dave/activity) for providing his insight on the Spark Cloud. Thank you @Dave!.
 
 https://github.com/krvarma/SparkServer_Extension
 
